@@ -1,0 +1,16 @@
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.exe
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.deps.json
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.runtimeconfig.json
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.runtimeconfig.dev.json
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.dll
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\bin\Debug\netcoreapp3.1\DigitalBallotBoxWF.pdb
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.csproj.GenerateResource.cache
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.csproj.CoreCompileInputs.cache
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.AssemblyInfoInputs.cache
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.AssemblyInfo.cs
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.dll
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.pdb
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.CandidateRegisterForm.resources
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.MainForm.resources
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.VoteForm.resources
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.Properties.Resources.resources

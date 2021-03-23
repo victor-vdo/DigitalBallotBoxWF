@@ -14,3 +14,4 @@ D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\
 D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.MainForm.resources
 D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.VoteForm.resources
 D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.Properties.Resources.resources
+D:\Trabalho\Pessoais\Projetos\BackEnd\DigitalBallotBoxWF\DigitalBallotBoxWF\obj\Debug\netcoreapp3.1\DigitalBallotBoxWF.csprojAssemblyReference.cache

@@ -49,9 +49,21 @@ namespace DigitalBallotBoxWF
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
+            this.pnlPresident = new System.Windows.Forms.Panel();
+            this.lblCandidatePoliticalParty = new System.Windows.Forms.Label();
+            this.lblCandidateName = new System.Windows.Forms.Label();
+            this.txbCandidateNumber = new System.Windows.Forms.TextBox();
+            this.lblPoliticalParty = new System.Windows.Forms.Label();
+            this.picbCandidatePhoto = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblNumber = new System.Windows.Forms.Label();
+            this.lblYourVoteTo = new System.Windows.Forms.Label();
+            this.lblCandidateType = new System.Windows.Forms.Label();
             this.pnlScreen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbElectoralJustice)).BeginInit();
             this.panel1.SuspendLayout();
+            this.pnlPresident.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbCandidatePhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlScreen
@@ -77,7 +89,6 @@ namespace DigitalBallotBoxWF
             this.picbElectoralJustice.TabIndex = 4;
             this.picbElectoralJustice.TabStop = false;
             this.picbElectoralJustice.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.picbElectoralJustice_LoadCompleted);
-            this.picbElectoralJustice.Click += new System.EventHandler(this.picbElectoralJustice_Click);
             // 
             // lblCity
             // 
@@ -158,6 +169,7 @@ namespace DigitalBallotBoxWF
             this.btnFix.TabIndex = 11;
             this.btnFix.Text = "Corrige";
             this.btnFix.UseVisualStyleBackColor = false;
+            this.btnFix.Click += new System.EventHandler(this.btnFix_Click);
             // 
             // btnWhite
             // 
@@ -168,6 +180,7 @@ namespace DigitalBallotBoxWF
             this.btnWhite.TabIndex = 10;
             this.btnWhite.Text = "Branco";
             this.btnWhite.UseVisualStyleBackColor = false;
+            this.btnWhite.Click += new System.EventHandler(this.btnWhite_Click);
             // 
             // btn0
             // 
@@ -178,6 +191,7 @@ namespace DigitalBallotBoxWF
             this.btn0.TabIndex = 9;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btn9
             // 
@@ -188,6 +202,7 @@ namespace DigitalBallotBoxWF
             this.btn9.TabIndex = 8;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn8
             // 
@@ -198,6 +213,7 @@ namespace DigitalBallotBoxWF
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -208,7 +224,7 @@ namespace DigitalBallotBoxWF
             this.btn7.TabIndex = 6;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.button8_Click);
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn6
             // 
@@ -219,6 +235,7 @@ namespace DigitalBallotBoxWF
             this.btn6.TabIndex = 5;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
@@ -229,6 +246,7 @@ namespace DigitalBallotBoxWF
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
@@ -239,6 +257,7 @@ namespace DigitalBallotBoxWF
             this.btn4.TabIndex = 3;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn3
             // 
@@ -249,6 +268,7 @@ namespace DigitalBallotBoxWF
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
@@ -259,6 +279,7 @@ namespace DigitalBallotBoxWF
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -269,6 +290,114 @@ namespace DigitalBallotBoxWF
             this.btn1.TabIndex = 0;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            // 
+            // pnlPresident
+            // 
+            this.pnlPresident.BackColor = System.Drawing.Color.White;
+            this.pnlPresident.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlPresident.Controls.Add(this.lblCandidatePoliticalParty);
+            this.pnlPresident.Controls.Add(this.lblCandidateName);
+            this.pnlPresident.Controls.Add(this.txbCandidateNumber);
+            this.pnlPresident.Controls.Add(this.lblPoliticalParty);
+            this.pnlPresident.Controls.Add(this.picbCandidatePhoto);
+            this.pnlPresident.Controls.Add(this.lblName);
+            this.pnlPresident.Controls.Add(this.lblNumber);
+            this.pnlPresident.Controls.Add(this.lblYourVoteTo);
+            this.pnlPresident.Controls.Add(this.lblCandidateType);
+            this.pnlPresident.Location = new System.Drawing.Point(28, 43);
+            this.pnlPresident.Name = "pnlPresident";
+            this.pnlPresident.Size = new System.Drawing.Size(460, 300);
+            this.pnlPresident.TabIndex = 5;
+            // 
+            // lblCandidatePoliticalParty
+            // 
+            this.lblCandidatePoliticalParty.AutoSize = true;
+            this.lblCandidatePoliticalParty.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCandidatePoliticalParty.Location = new System.Drawing.Point(69, 202);
+            this.lblCandidatePoliticalParty.Name = "lblCandidatePoliticalParty";
+            this.lblCandidatePoliticalParty.Size = new System.Drawing.Size(311, 17);
+            this.lblCandidatePoliticalParty.TabIndex = 9;
+            this.lblCandidatePoliticalParty.Text = "Partido político a qual o candidato pertence";
+            // 
+            // lblCandidateName
+            // 
+            this.lblCandidateName.AutoSize = true;
+            this.lblCandidateName.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCandidateName.Location = new System.Drawing.Point(69, 174);
+            this.lblCandidateName.Name = "lblCandidateName";
+            this.lblCandidateName.Size = new System.Drawing.Size(219, 17);
+            this.lblCandidateName.TabIndex = 8;
+            this.lblCandidateName.Text = "Nome Completo do Candidato";
+            // 
+            // txbCandidateNumber
+            // 
+            this.txbCandidateNumber.Enabled = false;
+            this.txbCandidateNumber.Font = new System.Drawing.Font("Verdana", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbCandidateNumber.Location = new System.Drawing.Point(81, 92);
+            this.txbCandidateNumber.Name = "txbCandidateNumber";
+            this.txbCandidateNumber.Size = new System.Drawing.Size(189, 72);
+            this.txbCandidateNumber.TabIndex = 6;
+            // 
+            // lblPoliticalParty
+            // 
+            this.lblPoliticalParty.AutoSize = true;
+            this.lblPoliticalParty.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPoliticalParty.Location = new System.Drawing.Point(10, 201);
+            this.lblPoliticalParty.Name = "lblPoliticalParty";
+            this.lblPoliticalParty.Size = new System.Drawing.Size(63, 17);
+            this.lblPoliticalParty.TabIndex = 5;
+            this.lblPoliticalParty.Text = "Partido:";
+            // 
+            // picbCandidatePhoto
+            // 
+            this.picbCandidatePhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picbCandidatePhoto.Image = global::DigitalBallotBoxWF.Properties.Resources.person_logo;
+            this.picbCandidatePhoto.Location = new System.Drawing.Point(276, 17);
+            this.picbCandidatePhoto.Name = "picbCandidatePhoto";
+            this.picbCandidatePhoto.Size = new System.Drawing.Size(162, 147);
+            this.picbCandidatePhoto.TabIndex = 4;
+            this.picbCandidatePhoto.TabStop = false;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(10, 174);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(54, 17);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Nome:";
+            // 
+            // lblNumber
+            // 
+            this.lblNumber.AutoSize = true;
+            this.lblNumber.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNumber.Location = new System.Drawing.Point(10, 147);
+            this.lblNumber.Name = "lblNumber";
+            this.lblNumber.Size = new System.Drawing.Size(69, 17);
+            this.lblNumber.TabIndex = 2;
+            this.lblNumber.Text = "Número:";
+            // 
+            // lblYourVoteTo
+            // 
+            this.lblYourVoteTo.AutoSize = true;
+            this.lblYourVoteTo.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblYourVoteTo.Location = new System.Drawing.Point(10, 17);
+            this.lblYourVoteTo.Name = "lblYourVoteTo";
+            this.lblYourVoteTo.Size = new System.Drawing.Size(126, 17);
+            this.lblYourVoteTo.TabIndex = 1;
+            this.lblYourVoteTo.Text = "SEU VOTO PARA";
+            // 
+            // lblCandidateType
+            // 
+            this.lblCandidateType.AutoSize = true;
+            this.lblCandidateType.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCandidateType.Location = new System.Drawing.Point(25, 37);
+            this.lblCandidateType.Name = "lblCandidateType";
+            this.lblCandidateType.Size = new System.Drawing.Size(233, 25);
+            this.lblCandidateType.TabIndex = 0;
+            this.lblCandidateType.Text = "TIPO DE CANDIDATO";
             // 
             // VoteForm
             // 
@@ -276,6 +405,7 @@ namespace DigitalBallotBoxWF
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 382);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlPresident);
             this.Controls.Add(this.pnlScreen);
             this.Name = "VoteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -284,6 +414,9 @@ namespace DigitalBallotBoxWF
             this.pnlScreen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbElectoralJustice)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.pnlPresident.ResumeLayout(false);
+            this.pnlPresident.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbCandidatePhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,5 +455,28 @@ namespace DigitalBallotBoxWF
         private System.Windows.Forms.Label lblTitleElection;
         private System.Windows.Forms.PictureBox picbElectoralJustice;
         private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.Panel pnlPresident;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPresidentPoliticalParty;
+        private System.Windows.Forms.Label lblPresidentName;
+        private System.Windows.Forms.TextBox txbPresidentNumber;
+        private System.Windows.Forms.Label lblPoliticalParty;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblNumber;
+        private System.Windows.Forms.Label lblYourVoteTo;
+        private System.Windows.Forms.Label lblPresident;
+        private System.Windows.Forms.Label lblCandidatePoliticalParty;
+        private System.Windows.Forms.Label lblCandidateName;
+        private System.Windows.Forms.Label lblCandidateType;
+        private System.Windows.Forms.PictureBox picbCandidatePhoto;
+        private System.Windows.Forms.TextBox txbCandidateNumber;
     }
 }

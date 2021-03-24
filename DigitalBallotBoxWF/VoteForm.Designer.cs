@@ -62,8 +62,8 @@ namespace DigitalBallotBoxWF
             this.lblYourVoteTo = new System.Windows.Forms.Label();
             this.lblCandidateType = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.mnspOption = new System.Windows.Forms.MenuStrip();
-            this.mnitRegister = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -79,7 +79,7 @@ namespace DigitalBallotBoxWF
             this.panel1.SuspendLayout();
             this.pnlPresident.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbCandidatePhoto)).BeginInit();
-            this.mnspOption.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlScreen
@@ -420,20 +420,19 @@ namespace DigitalBallotBoxWF
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // mnspOption
+            // menuStrip1
             // 
-            this.mnspOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnitRegister});
-            this.mnspOption.Location = new System.Drawing.Point(0, 0);
-            this.mnspOption.Name = "mnspOption";
-            this.mnspOption.Size = new System.Drawing.Size(791, 24);
-            this.mnspOption.TabIndex = 6;
-            this.mnspOption.Text = "menuStrip1";
-            this.mnspOption.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(791, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // mnitRegister
+            // fileToolStripMenuItem
             // 
-            this.mnitRegister.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.openToolStripMenuItem,
             this.toolStripSeparator,
@@ -444,9 +443,9 @@ namespace DigitalBallotBoxWF
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
-            this.mnitRegister.Name = "mnitRegister";
-            this.mnitRegister.Size = new System.Drawing.Size(59, 20);
-            this.mnitRegister.Text = "&Opções";
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.fileToolStripMenuItem.Text = "&Opções";
             // 
             // newToolStripMenuItem
             // 
@@ -524,10 +523,11 @@ namespace DigitalBallotBoxWF
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 407);
-            this.Controls.Add(this.mnspOption);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlPresident);
             this.Controls.Add(this.pnlScreen);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "VoteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eleições 2021";
@@ -538,8 +538,8 @@ namespace DigitalBallotBoxWF
             this.pnlPresident.ResumeLayout(false);
             this.pnlPresident.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbCandidatePhoto)).EndInit();
-            this.mnspOption.ResumeLayout(false);
-            this.mnspOption.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -603,9 +603,9 @@ namespace DigitalBallotBoxWF
         private System.Windows.Forms.PictureBox picbCandidatePhoto;
         private System.Windows.Forms.TextBox txbCandidateNumber;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.MenuStrip mnspOption;
-        private System.Windows.Forms.ToolStripMenuItem mnitRegister;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;

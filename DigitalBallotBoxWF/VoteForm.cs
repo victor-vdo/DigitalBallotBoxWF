@@ -80,6 +80,9 @@ namespace DigitalBallotBoxWF
             txbCandidateNumber.Text = txbCandidateNumber.Text.Remove(txbCandidateNumber.Text.Length - 1);
         }
 
-        
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

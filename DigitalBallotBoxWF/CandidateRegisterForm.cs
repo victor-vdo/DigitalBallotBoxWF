@@ -16,7 +16,8 @@ namespace DigitalBallotBoxWF
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
+            this.Close();
+            VoteForm mainForm = new VoteForm();
             mainForm.Show();
             Hide();
         }
@@ -27,8 +28,8 @@ namespace DigitalBallotBoxWF
                 "Data Source=DESKTOP-8QPURBN;Initial Catalog=election;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
             var sql = 
-                "INSERT INTO CANDIDATE (id, name, number, politicalparty, type) " +
-                "values (@id, @name,@number, @politicalparty, @type)";
+                "INSERT INTO CANDIDATE (id, name, number, politicalparty, type, state, city) " +
+                "values (@id, @name,@number, @politicalparty, @type, @state, @city)";
             var newId = Guid.NewGuid();
 
             try
@@ -40,6 +41,8 @@ namespace DigitalBallotBoxWF
                 command.Parameters.Add(new SqlParameter("number", this.txbNumer.Text));
                 command.Parameters.Add(new SqlParameter("politicalparty", this.txbPoliticalParty.Text));
                 command.Parameters.Add(new SqlParameter("type", type));
+                command.Parameters.Add(new SqlParameter("state", this.cbbState.Text));
+                command.Parameters.Add(new SqlParameter("city", this.txbCity.Text));
                 conn.Open();
                 command.ExecuteNonQuery();
                 conn.Close();
@@ -64,34 +67,50 @@ namespace DigitalBallotBoxWF
                 case "Presidente":
                     lblState.Visible = false;
                     cbbState.Visible = false;
+                    lblCity.Visible = false;
+                    txbCity.Visible = false;
                     break;
                 case "Governador":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 case "Prefeito":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 case "Senador":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 case "DeputadoFederal":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 case "DeputadoEstadual":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 case "Vereador":
                     lblState.Visible = true;
                     cbbState.Visible = true;
+                    lblCity.Visible = true;
+                    txbCity.Visible = true;
                     break;
                 default:
                     lblState.Visible = false;
                     cbbState.Visible = false;
+                    lblCity.Visible = false;
+                    txbCity.Visible = false;
                     break;
             }
         }

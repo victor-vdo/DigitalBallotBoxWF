@@ -41,6 +41,8 @@ namespace DigitalBallotBoxWF
             this.cbbType = new System.Windows.Forms.ComboBox();
             this.lblState = new System.Windows.Forms.Label();
             this.cbbState = new System.Windows.Forms.ComboBox();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.txbCity = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -94,9 +96,9 @@ namespace DigitalBallotBoxWF
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnRegister.Location = new System.Drawing.Point(308, 164);
+            this.btnRegister.Location = new System.Drawing.Point(335, 193);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(95, 29);
+            this.btnRegister.Size = new System.Drawing.Size(77, 29);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Cadastrar";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -105,7 +107,7 @@ namespace DigitalBallotBoxWF
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.IndianRed;
-            this.btnCancel.Location = new System.Drawing.Point(417, 164);
+            this.btnCancel.Location = new System.Drawing.Point(418, 194);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(78, 28);
             this.btnCancel.TabIndex = 7;
@@ -143,7 +145,7 @@ namespace DigitalBallotBoxWF
             // lblState
             // 
             this.lblState.AutoSize = true;
-            this.lblState.Location = new System.Drawing.Point(365, 122);
+            this.lblState.Location = new System.Drawing.Point(25, 158);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(45, 15);
             this.lblState.TabIndex = 10;
@@ -181,17 +183,37 @@ namespace DigitalBallotBoxWF
             "SP",
             "SE",
             "TO"});
-            this.cbbState.Location = new System.Drawing.Point(416, 117);
+            this.cbbState.Location = new System.Drawing.Point(89, 155);
             this.cbbState.Name = "cbbState";
-            this.cbbState.Size = new System.Drawing.Size(79, 23);
+            this.cbbState.Size = new System.Drawing.Size(44, 23);
             this.cbbState.TabIndex = 11;
             this.cbbState.Visible = false;
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.Location = new System.Drawing.Point(139, 158);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(47, 15);
+            this.lblCity.TabIndex = 12;
+            this.lblCity.Text = "Cidade:";
+            this.lblCity.Visible = false;
+            // 
+            // txbCity
+            // 
+            this.txbCity.Location = new System.Drawing.Point(192, 155);
+            this.txbCity.Name = "txbCity";
+            this.txbCity.Size = new System.Drawing.Size(304, 23);
+            this.txbCity.TabIndex = 13;
+            this.txbCity.Visible = false;
             // 
             // CandidateRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 200);
+            this.ClientSize = new System.Drawing.Size(512, 234);
+            this.Controls.Add(this.txbCity);
+            this.Controls.Add(this.lblCity);
             this.Controls.Add(this.cbbState);
             this.Controls.Add(this.lblState);
             this.Controls.Add(this.cbbType);
@@ -225,5 +247,7 @@ namespace DigitalBallotBoxWF
         private System.Windows.Forms.ComboBox cbbType;
         private System.Windows.Forms.Label lblState;
         private System.Windows.Forms.ComboBox cbbState;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.TextBox txbCity;
     }
 }
